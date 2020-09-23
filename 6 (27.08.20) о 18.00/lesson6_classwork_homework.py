@@ -130,7 +130,7 @@
 #     print("The factorial of the number 0 is 1")
 # else:
 #     for i in range(1,num+1):
-#         factorial = factorial+*i
+#         factorial = factorial*i
 #     print("The factorial of {0} is {1}".format(num, factorial))
 
 ###################################################
