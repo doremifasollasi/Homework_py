@@ -88,3 +88,26 @@
 generator_range = (i for i in range(11))
 
 print(generator_range)
+
+def my_range(first, second, stop):
+    number = first
+    while(number<second):
+        yield number
+        number += stop
+
+def main():
+    for i in my_range(1, 10, 1):
+        print(i)
+    print("-------------") 
+
+generator = my_range(1, 10, 1)
+
+try:
+    while True:
+        print("generator: ", next(generator))
+except StopIteration:
+    print("-------------")
+    print("Stop program")
+
+if __name__ == '__main__':
+    main()
